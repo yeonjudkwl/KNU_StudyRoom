@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    background: rgb(246,246,246);
+}
+/* header */
+header>#toplogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 30px;
+}
+header>#toplogo>img{
+    width: 111.51px;
+    height: 20px;
+    margin: 5px 0 0;
+}
+header>.logo{
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(218,33,39);
+    color: rgb(255,255,255);
+}
+header>.logo>h1{
+    font-family: 나눔고딕;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+header>.logo>h1>a{
+    text-decoration: none;
+    color: rgb(255,255,255);
+}
+/* main */
+main{
+    width: 85vw;
+    margin: 30px auto;
+}
+main>#chart{
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: rgb(255,255,255);
+    border-radius: 5px;
+}
+main>#chart>.chart_all{
+    width: 80px;
+    height: 80px;
+    border: 1px solid;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main>#mypage>#btn_mypage{
+    width: 100%;
+    height: 53px;
+    margin: 20px 0;
+    background: rgba(79,81,81,0.6);
+    border: none;
+    border-radius: 5px;
+    color: rgba(255,255,255);
+    font-size: 18px;
+}
+main>#mypage>#btn_mypage:hover{
+    background: rgba(79,81,81,0.8);
+    cursor: pointer;
+}
+main>#main_post{
+    display: flex;
+    margin: 20px auto;
+}
+main>#main_post>.main_post_item{
+    flex: .8;
+    margin: 0 1px;
+    padding: 3px;
+    background-color: rgb(255,255,255);
+}
+main>#main_post>.main_post_item>h3{
+    margin-bottom: 8px;
+    padding: 5px 0;
+    background: rgba(246,246,246);
+    text-align: center;
+}
+main>#main_post>.main_post_item>ul{
+    list-style: none;
+}
+main>#main_post>.main_post_item li{
+    margin-bottom: 5px;
+    border-bottom: 1px solid rgba(246,246,246);
+}
