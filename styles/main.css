@@ -132,10 +132,11 @@ main>#reserved_mypage>.btn_return{
     width: 70px;
     height: 35px;
     position: absolute;
-    bottom: 20vh;
+    bottom: 15vh;
     left: 50%;
     transform: translateX(-50%);
     background: rgba(218,33,39);
+    font-size: 1em;
     color: rgb(225,225,225);
     border: none;
     border-radius: 3px;
