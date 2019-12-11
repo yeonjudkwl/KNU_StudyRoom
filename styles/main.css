@@ -66,12 +66,15 @@ main>#mypage>#btn_mypage{
     background: rgba(79,81,81,0.6);
     border: none;
     border-radius: 2px;
-    color: rgba(255,255,255);
-    font-size: 18px;
 }
 main>#mypage>#btn_mypage:hover{
     background: rgba(79,81,81,0.8);
     cursor: pointer;
+}
+main>#mypage>#btn_mypage>a{
+    text-decoration: none;
+    color: rgba(255,255,255);
+    font-size: 18px;
 }
 main>#main_post{
     display: flex;
