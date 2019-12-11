@@ -145,23 +145,26 @@ main>#reserved_mypage>.btn_return:hover{
     cursor: pointer;
 }
 /* post */
-main>.post{
+main>.post_wrap{
     width: 75vw;
-    height: 150px;
-    margin: 20px auto;
-    padding: 25px;
+    margin: 40px auto;
+}
+main>.post_wrap>.post{
+    height: 130px;
+    margin-top: 30px;
+    padding: 20px 25px;
     box-sizing: border-box;
     border: 1px solid rgba(79,81,81);
     border-radius: 5px;
     position: relative;
 }
-main>.post>span{
+main>.post_wrap>.post>span{
     position: absolute;
     top: -10px;
     left: 15px;
     background: rgb(246,246,246);
 }
-main>.post>ul{
+main>.post_wrap>.post>ul{
     line-height: 2;
     list-style-type: square;
 }
