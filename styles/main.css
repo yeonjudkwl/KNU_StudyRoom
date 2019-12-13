@@ -79,7 +79,7 @@ main>#mypage #btn_mypage:hover{
     background: rgba(79,81,81,0.8);
     cursor: pointer;
 }
-main>#mypage>#btn_mypage>a{
+main>#mypage>a>#btn_mypage{
     text-decoration: none;
     color: rgba(255,255,255);
     font-size: 18px;
