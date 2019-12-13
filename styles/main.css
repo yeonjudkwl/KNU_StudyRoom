@@ -67,7 +67,7 @@ main>#chart>.chart_all{
     align-items: center;
     justify-content: center;
 }
-main>#mypage>#btn_mypage{
+main>#mypage #btn_mypage{
     width: 100%;
     height: 53px;
     margin: 10px 0;
@@ -75,7 +75,7 @@ main>#mypage>#btn_mypage{
     border: none;
     border-radius: 2px;
 }
-main>#mypage>#btn_mypage:hover{
+main>#mypage #btn_mypage:hover{
     background: rgba(79,81,81,0.8);
     cursor: pointer;
 }
