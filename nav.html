@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>  
+<script>
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	// title:{
+	// 	text: "1a",
+	// 	horizontalAlign: "center"
+	// },
+	data: [{
+		type: "doughnut",
+		startAngle: 0,
+		dataPoints: [
+			{ y: 10 },
+			{ y: 90 }
+		]
+	}]
+});
+var chart2 = new CanvasJS.Chart("chartContainer2", {
+	animationEnabled: true,
+	data: [{
+		type: "doughnut",
+		startAngle: 0,
+		dataPoints: [
+			{ y: 50 },
+			{ y: 60 }
+		]
+	}]
+});
+chart.render();
+chart2.render();
+}
+</script>
+</head>
+<body>
+<div id="chartContainer" style="height: 100px; width: 100%;"></div>
+<div id="chartContainer2" style="height: 100px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html>

@@ -28,6 +28,14 @@ header>.logo{
     background: rgba(218,33,39);
     color: rgb(255,255,255);
 }
+header>.logo>img{
+    width: 23px;
+    position: absolute;
+    left: 3vw;
+}
+header>.logo>img:hover{
+    cursor: pointer;
+}
 header>.logo>h1{
     font-family: 나눔고딕;
     font-size: 1.5em;
@@ -98,6 +106,14 @@ main>#main_post>.main_post_item>ul{
 main>#main_post>.main_post_item li{
     margin-bottom: 5px;
     border-bottom: 1px solid rgba(246,246,246);
+}
+@media (max-width: 700px){
+    main>#main_post{
+        display: block;
+    }
+    main>#main_post>.main_post_item{
+        margin-top: 10px;
+    }
 }
 /* mypage */
 main>#reserved_mypage{

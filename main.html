@@ -7,6 +7,29 @@
     <title>사회과학대학</title>
     <link rel=icon href="./images/titlelogo.png" sizes="16x16" type="image/png">
     <link rel="stylesheet" href="./styles/main.css">
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <style>
+        #main_nav{
+            left: -200px;
+            transition: 0.5s;
+            display: none;
+            /* transform:translate(0,0); 
+            transition:transform 300ms cubic-bezier(0.4, 0, 0.2, 1); */
+        }
+        #main_nav.active{
+            width: 180px;
+            height: 87vh;
+            padding: 30px 20px;
+            background: rgba(255,255,255);
+            box-shadow: 0 5px 8px rgba(79,81,81,.7);
+            position: absolute;
+            left: 0;
+            z-index: 1;
+            display: block;
+            /* transition: 0.5s; */
+            /* transform:translate(250px,0); */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -14,15 +37,16 @@
             <img src="./images/knu_logo.png" alt="경북대학교">
         </div>
         <div class="logo">
+            <img src="./images/navBtn.svg" id="nav_btn" alt="메뉴버튼">
             <h1><a href="#">사회과학대학</a></h1>
         </div>
-        <!-- <nav>
+        <nav id="main_nav">
             <ul>
                 <li>이름<br>학번 / 과</li>
                 <li>예약현황</li>
                 <li>로그아웃</li>
             </ul>
-        </nav> -->
+        </nav>
     </header>
     <main>
         <section id="chart">
@@ -52,5 +76,54 @@
             </div>
         </section>
     </main>
+    <script>
+        var nav_btn = document.getElementById('nav_btn');
+
+        nav_btn.addEventListener('click',function(){
+            var nav = document.getElementById('main_nav');
+            var attr = nav.getAttribute('class');
+
+            if(attr == 'active'){
+                nav.removeAttribute('class');
+            }else{
+                nav.setAttribute('class','active');
+            }
+        })
+        // document.querySelector("nav_btn").addEventListener("click",function(e){ 
+        //     document.querySelector("main_nav").classList.toggle("active"); 
+        // });
+    </script>
+    <!-- <script>
+        window.onload = function () {
+            var chart1 = new CanvasJS.Chart("chart_1", {
+                animationEnabled: true,
+                // title:{
+                // 	text: "1a",
+                // 	horizontalAlign: "center"
+                // },
+                data: [{
+                    type: "doughnut",
+                    startAngle: 0,
+                    dataPoints: [
+                        { y: 10 },
+                        { y: 90 }
+                    ]
+                }]
+            });
+            var chart2 = new CanvasJS.Chart("chart_2", {
+                animationEnabled: true,
+                data: [{
+                    type: "doughnut",
+                    startAngle: 0,
+                    dataPoints: [
+                        { y: 50 },
+                        { y: 60 }
+                    ]
+                }]
+            });
+            chart1.render();
+            chart2.render();
+            }
+    </script> -->
 </body>
 </html>
