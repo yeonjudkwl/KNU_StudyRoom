@@ -14,21 +14,26 @@
             <img src="./images/knu_logo.png" alt="경북대학교">
         </div>
         <div class="logo">
+            <img src="./images/navBtn.svg" id="nav_btn" onclick="openNav()" alt="메뉴버튼">
             <h1><a href="./main.html">사회과학대학</a></h1>
         </div>
-        <!-- <nav>
+        <nav id="mySidenav" class="sidenav">
             <ul>
-                <li>이름<br>학번 / 과</li>
-                <li>예약현황</li>
-                <li>로그아웃</li>
+                <a href="javascript:void(0)" class="navCloseBtn" onclick="closeNav()">&times;</a>
+                <a href="#"><li class="navFirst">이름<br>학번 / 과</li></a>
+                <a href="#"><li>예약현황</li></a>
+                <a href="#"><li>로그아웃</li></a>
             </ul>
-        </nav> -->
+        </nav>
     </header>
     <main>
         <section class="post_wrap">
             <section id="notice" class="post">
                 <span>공지사항</span>
                 <ul>
+                    <li>청소 관련 안내</li>
+                    <li>휴관 안내</li>
+                    <li>시험기간 연장 안내</li>
                     <li>불 끄고 퇴실해주세요</li>
                     <li>사용한 자리는 깨끗하게</li>
                     <li>환기를 시켜주세요</li>
@@ -42,15 +47,8 @@
                     <li>지갑 찾아요ㅠㅠ</li>
                 </ul>
             </section>
-            <section id="board" class="post">
-                <span>자유게시판</span>
-                <ul>
-                    <li>오픽 스터디원 구함</li>
-                    <li>NCS 같이해요</li>
-                    <li>토익 같이 하실 분</li>
-                </ul>
-            </section>
         </section>
     </main>
+    <script src="./scripts/main.js"></script>
 </body>
 </html>

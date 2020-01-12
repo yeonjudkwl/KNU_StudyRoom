@@ -8,28 +8,6 @@
     <link rel=icon href="./images/titlelogo.png" sizes="16x16" type="image/png">
     <link rel="stylesheet" href="./styles/main.css">
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-    <style>
-        #main_nav{
-            left: -200px;
-            transition: 0.5s;
-            display: none;
-            /* transform:translate(0,0); 
-            transition:transform 300ms cubic-bezier(0.4, 0, 0.2, 1); */
-        }
-        #main_nav.active{
-            width: 180px;
-            height: 87vh;
-            padding: 30px 20px;
-            background: rgba(255,255,255);
-            box-shadow: 0 5px 8px rgba(79,81,81,.7);
-            position: absolute;
-            left: 0;
-            z-index: 1;
-            display: block;
-            /* transition: 0.5s; */
-            /* transform:translate(250px,0); */
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -37,14 +15,15 @@
             <img src="./images/knu_logo.png" alt="경북대학교">
         </div>
         <div class="logo">
-            <img src="./images/navBtn.svg" id="nav_btn" alt="메뉴버튼">
+            <img src="./images/navBtn.svg" id="nav_btn" onclick="openNav()" alt="메뉴버튼">
             <h1><a href="#">사회과학대학</a></h1>
         </div>
-        <nav id="main_nav">
+        <nav id="mySidenav" class="sidenav">
             <ul>
-                <li>이름<br>학번 / 과</li>
-                <li>예약현황</li>
-                <li>로그아웃</li>
+                <a href="javascript:void(0)" class="navCloseBtn" onclick="closeNav()">&times;</a>
+                <a href="#"><li class="navFirst">이름<br>학번 / 과</li></a>
+                <a href="#"><li>예약현황</li></a>
+                <a href="#"><li>로그아웃</li></a>
             </ul>
         </nav>
     </header>
@@ -62,37 +41,21 @@
                 <h3>공지사항</h3>
                 <ul>
                     <li>청소 관련 안내</li>
-                    <li>분실물</li>
-                    <li>자유게시판</li>
+                    <li>휴관 안내</li>
+                    <li>시험기간 연장 안내</li>
                 </ul>
             </div>
             <div class="main_board main_post_item">
-                <h3>자유게시판</h3>
+                <h3>분실물</h3>
                 <ul>
-                    <li>토익 스터디</li>
-                    <li>오픽 같이 해요</li>
-                    <li>gsat 스터디원 모집</li>
+                    <li>에어팟 오른쪽 분실했어요</li>
+                    <li>usb 학생회실에 맡겼습니다</li>
+                    <li>지갑 찾아요ㅠㅠ</li>
                 </ul>
             </div>
         </section>
     </main>
-    <script>
-        var nav_btn = document.getElementById('nav_btn');
-
-        nav_btn.addEventListener('click',function(){
-            var nav = document.getElementById('main_nav');
-            var attr = nav.getAttribute('class');
-
-            if(attr == 'active'){
-                nav.removeAttribute('class');
-            }else{
-                nav.setAttribute('class','active');
-            }
-        })
-        // document.querySelector("nav_btn").addEventListener("click",function(e){ 
-        //     document.querySelector("main_nav").classList.toggle("active"); 
-        // });
-    </script>
+    <script src="./scripts/main.js"></script>
     <!-- <script>
         window.onload = function () {
             var chart1 = new CanvasJS.Chart("chart_1", {
