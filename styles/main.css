@@ -104,14 +104,8 @@ main>#chart{
     background: rgb(255,255,255);
     border-radius: 5px;
 }
-main>#chart>.chart_all{
-    width: 80px;
-    height: 80px;
-    border: 1px solid;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+main>#chart>.chart_div{
+    width: 100px;
 }
 main>#mypage #btn_mypage{
     width: 100%;
@@ -146,6 +140,10 @@ main>#main_post>.main_post_item>h3{
     background: rgba(246,246,246);
     text-align: center;
 }
+main>#main_post>.main_post_item>h3 a{
+    text-decoration: none;
+    color: black;
+}
 main>#main_post>.main_post_item>ul{
     list-style: none;
     padding-left: 15px;
@@ -153,6 +151,14 @@ main>#main_post>.main_post_item>ul{
 main>#main_post>.main_post_item li{
     margin-bottom: 5px;
     border-bottom: 1px solid rgba(246,246,246);
+}
+main>#main_post>.main_post_item li a{
+    text-decoration: none;
+    color: black;
+}
+main>#main_post>.main_post_item li:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
 @media (max-width: 700px){
     main>#main_post{
@@ -177,6 +183,7 @@ main>#reserved_mypage>.reserved_card{
     margin: 20px auto;
     border: 1px solid rgba(79,81,81,0.6);
     border-radius: 3px;
+    background: white;
 }
 main>#reserved_mypage>.reserved_card>table{
     width: 100%;
@@ -212,12 +219,14 @@ main>#reserved_mypage>.btn_return:hover{
 }
 /* post */
 main>.post_wrap{
+    display: flex;
     width: 75vw;
     margin: 40px auto;
 }
 main>.post_wrap>.post{
-    height: 130px;
-    margin-top: 30px;
+    width: 250px;
+    flex: 1;
+    margin: 30px 10px;
     padding: 20px 25px;
     box-sizing: border-box;
     border: 1px solid rgba(79,81,81);
@@ -226,11 +235,32 @@ main>.post_wrap>.post{
 }
 main>.post_wrap>.post>span{
     position: absolute;
-    top: -10px;
+    top: -17px;
     left: 15px;
     background: rgb(246,246,246);
+    font-size: 20px;
+    padding: 6px;
 }
 main>.post_wrap>.post>ul{
     line-height: 2;
     list-style-type: square;
+    padding: 10px;
+}
+main>.post_wrap>.post>ul a{
+    text-decoration: none;
+    color: black;
+}
+main>.post_wrap>.post li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+@media (max-width: 700px){
+    main>.post_wrap{
+        display: block;
+    }
+    main>.post_wrap>.post{
+        width: 70vw;
+        margin-top: 10px;
+        margin: 30px auto;
+    }
 }
