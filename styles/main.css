@@ -44,12 +44,20 @@ body.sign_bg>main>#sign_inputs input{
     border-radius: 2px;
 }
 body.sign_bg>main>#sign_inputs .sign_btn{
+    display: block;
+    line-height: 1.5;
+    padding: 5px 20px;
+    margin: .8px;
     width: 290px;
     margin-top: 10px;
+    border: none;
     border-radius: .5px;
     color: white;
     background: rgb(79, 81, 81);
     cursor: pointer;
+}
+body.sign_bg>main>#sign_inputs .sign_btn:focus{
+    outline: none;
 }
 body.sign_bg>main>#sign_inputs #auto_signin{
     width: 155px;
@@ -181,7 +189,7 @@ main>#chart{
     border-radius: 5px;
 }
 main>#chart>.chart_div{
-    width: 100px;
+    width: 80px;
 }
 main>#mypage #btn_mypage{
     width: 100%;
@@ -210,13 +218,13 @@ main>#main_post>.main_post_item{
     padding: 3px;
     background-color: rgb(255,255,255);
 }
-main>#main_post>.main_post_item>h3{
+main>#main_post>.main_post_item>h4{
     margin-bottom: 8px;
     padding: 5px 0;
     background: rgba(246,246,246);
     text-align: center;
 }
-main>#main_post>.main_post_item>h3 a{
+main>#main_post>.main_post_item>h4 a{
     text-decoration: none;
     color: black;
 }
