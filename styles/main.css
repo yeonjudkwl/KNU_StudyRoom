@@ -15,7 +15,7 @@ body.sign_bg{
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
-    margin-top: 100px;
+    margin-top: 150px;
 }
 body.sign_bg>header>#signlogo{
     margin-bottom: 20px;
