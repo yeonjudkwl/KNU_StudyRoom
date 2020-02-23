@@ -10,7 +10,7 @@ body{
 body.sign_bg{
     background:  rgba(218, 33, 39);
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,7 +45,7 @@ body.sign_bg>main>#sign_inputs input{
 body.sign_bg>main>#sign_inputs .sign_btn{
     width: 290px;
     margin-top: 10px;
-    border-radius: 3px;
+    border-radius: .5px;
     color: white;
     background: rgb(79, 81, 81);
     cursor: pointer;
@@ -72,6 +72,7 @@ body.sign_bg>main>#sign_inputs #major{
     margin: .8px;
     border: none;
     border-radius: 2px;
+    background: white;
 }
 body.sign_bg>main>#sign_inputs #major:focus{
     outline: none;
