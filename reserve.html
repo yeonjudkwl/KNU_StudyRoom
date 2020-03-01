@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>사회과학대학</title>
+    <link rel=icon href="./images/titlelogo.png" sizes="16x16" type="image/png">
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <header>
+        <div id="toplogo">
+            <img src="./images/knu_logo.png" alt="경북대학교">
+        </div>
+        <div class="logo">
+            <img src="./images/navBtn.svg" id="nav_btn" onclick="openNav()" alt="메뉴버튼">
+            <h1><a href="./main.html">사회과학대학</a></h1>
+        </div>
+        <nav id="mySidenav" class="sidenav">
+            <ul>
+                <a href="javascript:void(0)" class="navCloseBtn" onclick="closeNav()">&times;</a>
+                <a href="#"><li class="navFirst">이름<br>학번 / 과</li></a>
+                <a href="#"><li>예약현황</li></a>
+                <a href="#"><li>로그아웃</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="reserve">
+            <h3>예약 하기</h3>
+            <select name="" id="">
+                <option value="선택">선택</option>
+                <option value="09:00">09:00</option>
+                <option value="09:30">09:30</option>
+                <option value="10:00">10:00</option>
+                <option value="10:30">10:30</option>
+                <option value="11:00">11:00</option>
+            </select>
+        </section>
+        
+    </main>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
