@@ -28,17 +28,232 @@
     </header>
     <main>
         <section id="reserve">
-            <h3>예약 하기</h3>
-            <select name="" id="">
-                <option value="선택">선택</option>
-                <option value="09:00">09:00</option>
-                <option value="09:30">09:30</option>
-                <option value="10:00">10:00</option>
-                <option value="10:30">10:30</option>
-                <option value="11:00">11:00</option>
-            </select>
+            <!-- <h3>예약 하기</h3> -->
+            <div class="buttons">
+                <button id="1A">1A</button>
+                <button id="3A">3A</button>
+                <button id="3B">3B</button>
+            </div>
+            <div class="selects">
+                <p>시작 시간: 
+                    <select name="start" id="start">
+                        <option value="선택">선택</option>
+                        <option value="09:00">09:00</option>
+                        <option value="09:30">09:30</option>
+                        <option value="10:00">10:00</option>
+                        <option value="10:30">10:30</option>
+                        <option value="11:00">11:00</option>
+                        <option value="11:30">11:30</option>
+                        <option value="12:00">12:00</option>
+                        <option value="12:30">12:30</option>
+                        <option value="13:00">13:00</option>
+                        <option value="13:30">13:30</option>
+                        <option value="14:00">14:00</option>
+                        <option value="14:30">14:30</option>
+                        <option value="15:00">15:00</option>
+                        <option value="15:30">15:30</option>
+                        <option value="16:00">16:00</option>
+                        <option value="16:30">16:30</option>
+                        <option value="17:00">17:00</option>
+                        <option value="17:30">17:30</option>
+                        <option value="18:00">18:00</option>
+                        <option value="18:30">18:30</option>
+                        <option value="19:00">19:00</option>
+                        <option value="19:30">19:30</option>
+                        <option value="20:00">20:00</option>
+                        <option value="20:30">20:30</option>
+                        <option value="21:00">21:00</option>
+                    </select>
+                </p>
+                <p>종료 시간: 
+                    <select name="end" id="end">
+                        <option value="선택">선택</option>
+                        <option value="09:00">09:00</option>
+                        <option value="09:30">09:30</option>
+                        <option value="10:00">10:00</option>
+                        <option value="10:30">10:30</option>
+                        <option value="11:00">11:00</option>
+                        <option value="11:30">11:30</option>
+                        <option value="12:00">12:00</option>
+                        <option value="12:30">12:30</option>
+                        <option value="13:00">13:00</option>
+                        <option value="13:30">13:30</option>
+                        <option value="14:00">14:00</option>
+                        <option value="14:30">14:30</option>
+                        <option value="15:00">15:00</option>
+                        <option value="15:30">15:30</option>
+                        <option value="16:00">16:00</option>
+                        <option value="16:30">16:30</option>
+                        <option value="17:00">17:00</option>
+                        <option value="17:30">17:30</option>
+                        <option value="18:00">18:00</option>
+                        <option value="18:30">18:30</option>
+                        <option value="19:00">19:00</option>
+                        <option value="19:30">19:30</option>
+                        <option value="20:00">20:00</option>
+                        <option value="20:30">20:30</option>
+                        <option value="21:00">21:00</option>
+                    </select>
+                </p>
+            </div>
         </section>
-        
+        <section id="reserve_all">
+            <h3>예약 현황</h3>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>월</th>
+                    <th>화</th>
+                    <th>수</th>
+                    <th>목</th>
+                    <th>금</th>
+                </tr>
+                <tr>
+                    <td>09:00</td>
+                    <td id="Mon_1"></td>
+                    <td id="Tue_1"></td>
+                    <td id="Wed_1"></td>
+                    <td id="Thur_1"></td>
+                    <td id="Fri_1"></td>
+                </tr>
+                <tr>
+                    <td>09:30</td>
+                    <td id="Mon_2"></td>
+                    <td id="Tue_2"></td>
+                    <td id="Wed_2"></td>
+                    <td id="Thur_2"></td>
+                    <td id="Fri_2"></td>
+                </tr>
+                <tr>
+                    <td>10:00</td>
+                    <td id="Mon_3"></td>
+                    <td id="Tue_3"></td>
+                    <td id="Wed_3"></td>
+                    <td id="Thur_3"></td>
+                    <td id="Fri_3"></td>
+                </tr>
+                <tr>
+                    <td>10:30</td>
+                    <td id="Mon_4"></td>
+                    <td id="Tue_4"></td>
+                    <td id="Wed_4"></td>
+                    <td id="Thur_4"></td>
+                    <td id="Fri_4"></td>
+                </tr>
+                <tr>
+                    <td>11:00 ~ 11:30</td>
+                    <td id="Mon_5"></td>
+                    <td id="Tue_5"></td>
+                    <td id="Wed_5"></td>
+                    <td id="Thur_5"></td>
+                    <td id="Fri_5"></td>
+                </tr>
+                <tr>
+                    <td>11:30 ~ 12:00</td>
+                    <td id="Mon_6"></td>
+                    <td id="Tue_6"></td>
+                    <td id="Wed_6"></td>
+                    <td id="Thur_6"></td>
+                    <td id="Fri_6"></td>
+                </tr>
+                <tr>
+                    <td>12:00 ~ 12:30</td>
+                    <td id="Mon_7"></td>
+                    <td id="Tue_7"></td>
+                    <td id="Wed_7"></td>
+                    <td id="Thur_7"></td>
+                    <td id="Fri_7"></td>
+                </tr>
+                <tr>
+                    <td>12:30 ~ 13:00</td>
+                    <td id="Mon_8"></td>
+                    <td id="Tue_8"></td>
+                    <td id="Wed_8"></td>
+                    <td id="Thur_8"></td>
+                    <td id="Fri_8"></td>
+                </tr>
+                <tr>
+                    <td>13:00 ~ 13:30</td>
+                    <td id="Mon_9"></td>
+                    <td id="Tue_9"></td>
+                    <td id="Wed_9"></td>
+                    <td id="Thur_9"></td>
+                    <td id="Fri_9"></td>
+                </tr>
+                <tr>
+                    <td>13:30 ~ 14:00</td>
+                    <td id="Mon_10"></td>
+                    <td id="Tue_10"></td>
+                    <td id="Wed_10"></td>
+                    <td id="Thur_10"></td>
+                    <td id="Fri_10"></td>
+                </tr>
+                <tr>
+                    <td>14:00 ~ 14:30</td>
+                    <td id="Mon_11"></td>
+                    <td id="Tue_11"></td>
+                    <td id="Wed_11"></td>
+                    <td id="Thur_11"></td>
+                    <td id="Fri_11"></td>
+                </tr>
+                <tr>
+                    <td>14:30 ~ 15:00</td>
+                    <td id="Mon_12"></td>
+                    <td id="Tue_12"></td>
+                    <td id="Wed_12"></td>
+                    <td id="Thur_12"></td>
+                    <td id="Fri_12"></td>
+                </tr>
+                <tr>
+                    <td>15:00 ~ 15:30</td>
+                    <td id="Mon_13"></td>
+                    <td id="Tue_13"></td>
+                    <td id="Wed_13"></td>
+                    <td id="Thur_13"></td>
+                    <td id="Fri_13"></td>
+                </tr>
+                <tr>
+                    <td>15:30 ~ 16:00</td>
+                    <td id="Mon_14"></td>
+                    <td id="Tue_14"></td>
+                    <td id="Wed_14"></td>
+                    <td id="Thur_14"></td>
+                    <td id="Fri_14"></td>
+                </tr>
+                <tr>
+                    <td>16:00 ~ 16:30</td>
+                    <td id="Mon_15"></td>
+                    <td id="Tue_15"></td>
+                    <td id="Wed_15"></td>
+                    <td id="Thur_15"></td>
+                    <td id="Fri_15"></td>
+                </tr>
+                <tr>
+                    <td>16:30 ~ 17:00</td>
+                    <td id="Mon_16"></td>
+                    <td id="Tue_16"></td>
+                    <td id="Wed_16"></td>
+                    <td id="Thur_16"></td>
+                    <td id="Fri_16"></td>
+                </tr>
+                <tr>
+                    <td>17:00 ~ 17:30</td>
+                    <td id="Mon_17"></td>
+                    <td id="Tue_17"></td>
+                    <td id="Wed_17"></td>
+                    <td id="Thur_17"></td>
+                    <td id="Fri_17"></td>
+                </tr>
+                <tr>
+                    <td>17:30 ~ 18:00</td>
+                    <td id="Mon_18"></td>
+                    <td id="Tue_18"></td>
+                    <td id="Wed_18"></td>
+                    <td id="Thur_18"></td>
+                    <td id="Fri_18"></td>
+                </tr>
+            </table>
+        </section>
     </main>
     <script src="./scripts/main.js"></script>
 </body>

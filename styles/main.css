@@ -252,13 +252,48 @@ main>#main_post>.main_post_item li:hover{
         margin-top: 10px;
     }
 }
+/* reserve */
+main>#reserve{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 50px;
+}
+main>#reserve>.buttons{
+    display: block;
+    margin-bottom: 20px;
+}
+main>#reserve>.buttons button{
+    width: 50px;
+    height: 40px;
+    background: rgba(218, 33, 39);
+    color: white;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    box-shadow: 2px 1px gray; 
+}
+main>#reserve>.buttons button:focus{
+    outline: none;
+}
+main>#reserve p{
+    margin-bottom: 3px;
+}
+main>#reserve p>select{
+    width: 100px;
+    height: 30px;
+}
+main>#reserve p>select:focus{
+    outline: none;
+}
 /* reserve_all */
 main>#reserve_all{
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
-    margin-top: 120px;
+    margin-top: 20px;
 }
 main>#reserve_all>h3{
     margin-bottom: 10px;
@@ -384,4 +419,37 @@ main>.post_wrap>.post li:hover{
         margin-top: 10px;
         margin: 30px auto;
     }
+}
+/* footer */
+footer{
+    width: 100vw;
+    height: 15vh;
+    padding: 12px 8vw;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    background: rgba(79, 81, 81, .8);
+    color: rgba(255, 255, 255, .8);
+}
+footer>.contact{
+    position: absolute;
+    right: 10vw;
+}
+footer>.contact>a{
+    text-decoration: none;
+}
+footer>.contact>a img{
+    width: 30px;
+    height: 30px;
+}
+footer>.contact>a .kakao{
+    margin-right: 10px;
+}
+footer>p{
+    font-size: 14px;
+    line-height: 1.2;
+}
+footer .copyright{
+    font-size: 11px;
+    color: rgba(255, 255, 255, .5);
 }
