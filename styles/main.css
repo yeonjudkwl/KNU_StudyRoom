@@ -244,6 +244,11 @@ main>#main_post>.main_post_item li:hover{
     text-decoration: underline;
     cursor: pointer;
 }
+@media (min-width: 700px){
+    main{
+        height: 68vh;
+    }
+}
 @media (max-width: 700px){
     main>#main_post{
         display: block;
@@ -431,7 +436,7 @@ footer{
     height: 15vh;
     padding: 12px 8vw;
     box-sizing: border-box;
-    position: absolute;
+    position: relative;
     bottom: 0;
     background: rgba(79, 81, 81, .8);
     color: rgba(255, 255, 255, .8);
