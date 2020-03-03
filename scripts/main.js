@@ -27,7 +27,7 @@ new Chart(document.getElementById("chart_2"),
         "type":"doughnut",
         "data":{
             labels: [
-                '3A',
+                '1B',
             ],
             "datasets":[
                 {
@@ -43,7 +43,7 @@ new Chart(document.getElementById("chart_3"),
         "type":"doughnut",
         "data":{
             labels: [
-                '3B',
+                '3A',
             ],
             "datasets":[
                 {
