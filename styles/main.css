@@ -60,6 +60,7 @@ body.sign_bg>main>#sign_inputs .sign_btn:focus{
     outline: none;
 }
 body.sign_bg>main>#sign_inputs #auto_signin{
+    -webkit-appearance: none;
     width: 155px;
     bottom: -8.2px;
 }
