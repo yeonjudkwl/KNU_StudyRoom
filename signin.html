@@ -17,14 +17,19 @@
     <main>
         <section id="sign_inputs">
             <form action="">
-                <input type="text" name="student_id" id="student_id" placeholder="학      번">
-                <input type="text" name="id" id="id" placeholder="아 이 디">
-                <input type="password" name="password" id="password" placeholder="비밀번호">
+                <input type="text" name="student_id" id="student_id" placeholder="학      번" required autofocus>
+                <input type="text" name="id" id="id" placeholder="아 이 디" required>
+                <input type="password" name="password" id="password" placeholder="비밀번호" required>
                 <button class="sign_btn">로그인</button>
                 <!-- <input type="button" value="로그인" class="sign_btn"> -->
 
-                <label for="auto_signin"><input type="checkbox" name="auto_signin" id="auto_signin">자동로그인</label>
+                <!-- <label for="auto_signin"><input type="checkbox" name="auto_signin" id="auto_signin">자동로그인</!-->
+                <label for="auto_signin"><input type="checkbox" name="auto_signin" id="auto_signin" ><a>자동로그인</a></label>
             </form>
+            <div class="options">
+                <a class="option" href="#">비밀번호 찾기</a>
+                <a class="option" href="#">회원가입</a>
+            </div>
         </section>
     </main>
 </body>

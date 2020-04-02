@@ -68,11 +68,23 @@ body.sign_bg>main>#sign_inputs #auto_signin, label{
     position: absolute;
     right: 0;
     color: white;
-    font-size: 13px;
+    font-size: 14px;
     cursor: pointer;
 }
 body.sign_bg>main>#sign_inputs input:focus{
     outline: none;
+}
+body.sign_bg>main>#sign_inputs .options{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+}
+body.sign_bg>main>#sign_inputs .option{
+    color: rgba(255, 255, 255, .8);
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
 }
 /* signup */
 body.sign_bg>main>#sign_inputs #major{
